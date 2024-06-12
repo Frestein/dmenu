@@ -3,13 +3,13 @@
 
 static int topbar = 1;                      /* -b  option; if 0, dmenu appears at bottom     */
 static int draw_input = 1;                  /* -noi option; if 0, the input will not be drawn by default */
-static int centered = 0;                    /* -c option; centers dmenu on screen */
+static int centered = 1;                    /* -c option; centers dmenu on screen */
 static int min_width = 500;                    /* minimum width when centered */
 /* -fn option overrides fonts[0]; default X11 font or font set */
-static char font[] = "monospace:size=10";
+static char font[] = "JetBrainsMono Nerd Font:size=14";
 static const char *fonts[] = {
 	font,
-	"monospace:size=10",
+	"JetBrainsMono Nerd Font:size=14",
 };
 
 static char *prompt      = NULL;      /* -p  option; prompt to the left of input field */
@@ -47,7 +47,7 @@ ResourcePref resources[] = {
 };
 
 /* Size of the window border */
-static unsigned int border_width = 0;
+static unsigned int border_width = 2;
 /*
  * -vi option; if nonzero, vi mode is always enabled and can be
  * accessed with the global_esc keysym + mod mask
