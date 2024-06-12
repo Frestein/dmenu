@@ -1,5 +1,7 @@
 *.o
 config.h
 patches.h
+*.orig
+*.rej
 dmenu
 stest
