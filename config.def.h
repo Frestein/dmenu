@@ -27,6 +27,8 @@ static char *colors[SchemeLast][2] = {
 };
 /* -l option; if nonzero, dmenu uses vertical list with given number of lines */
 static unsigned int lines      = 0;
+static unsigned int maxhist    = 64;
+static int histnodup           = 1;	/* if 0, record repeated histories */
 
 /*
  * Characters not considered part of a word while deleting words
@@ -54,7 +56,7 @@ static unsigned int border_width = 2;
  */
 static unsigned int vi_mode = 1;
 static unsigned int start_mode = 1;			/* mode to use when -vi is passed. 0 = insert mode, 1 = normal mode */
-static Key global_esc = { XK_n, Mod1Mask };	/* escape key when vi mode is not enabled explicitly */
+static Key global_esc = { XK_v, Mod1Mask };	/* escape key when vi mode is not enabled explicitly */
 static Key quit_keys[] = {
 	/* keysym	modifier */
 	{ XK_q,		0 }
