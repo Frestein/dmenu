@@ -6,10 +6,10 @@ static int draw_input = 1;                  /* -noi option; if 0, the input will
 static int centered = 1;                    /* -c option; centers dmenu on screen */
 static int min_width = 500;                    /* minimum width when centered */
 /* -fn option overrides fonts[0]; default X11 font or font set */
-static char font[] = "JetBrainsMono Nerd Font:size=14";
+static char font[] = "JetBrainsMono Nerd Font:size=16";
 static const char *fonts[] = {
 	font,
-	"JetBrainsMono Nerd Font:size=14",
+	"JetBrainsMono Nerd Font:size=16",
 };
 
 static char *prompt      = NULL;      /* -p  option; prompt to the left of input field */
