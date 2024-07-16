@@ -33,7 +33,7 @@ char *colors[][2] = {
 };
 /* -l option; if nonzero, dmenu uses vertical list with given number of lines */
 static unsigned int lines      = 0;
-static unsigned int maxhist    = 15;
+static unsigned int maxhist    = 100;
 static int histnodup           = 1;	/* if 0, record repeated histories */
 
 /*
